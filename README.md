@@ -5,14 +5,9 @@ End-to-end pipeline for grounded instruction following in construction site oper
 ## Project Structure
 ```
 root/
-├── frames/                         # Original extracted frames (all videos)
 ├── pile_detection_verification/
 │   ├──simple_nouns/
 │   │   ├── frames_with_piles/      # Frames containing detected piles
-│   │   └──frames_without_piles/    # Frames with no detections
-│   ├──descriptive_phrases/
-│       ├── frames_with_piles/      # Frames containing detected piles
-│       └──frames_without_piles/    # Frames with no detections   
 ├── dataset/
 │   ├── vqa_pairs.jsonl/            # GPT-4o detection JSON outputs
 │   ├── train/                      # Training split 
@@ -32,16 +27,16 @@ root/
 ### Data Pipeline
 - **`eval_yolo.py`** - Run YOLO-World detection on frames in /frames -> generates detection JSON files in /pile_detection_verfication. I use the /simple_nouns/with_piles frames to generate VQA training data
 - **`generate_VQA.py`** - Use GPT-4o to generate VQA pairs from detections and placed in /dataset
-- **`prepare_training_data.py`** - Convert VQA JSONL -> HuggingFace Dataset format for training /dataset/train and /dataset/val
+- **`preprocess_data.py`** - Convert VQA JSONL -> HuggingFace Dataset format for training /dataset/train and /dataset/val
 
 ### Training
-- **`finetune.py`** - Fine-tune LLaMA 3.2 1B with LoRA on VQA dataset
-  - Requires: `C:/vlam/dataset/train` and `C:/vlam/dataset/val` to exist
-  - Outputs: Checkpoints to `C:/vlam/llama-vlam-lora/`
-  - Final model saved to: `C:/vlam/llama-vlam-final/`
+- **`llm_finetune.py`** - Fine-tune LLaMA 3.2 1B with LoRA on VQA dataset
+  - Requires: `dataset/train/` and `dataset/val/` to exist
+  - Outputs: Checkpoints to `llama-vlam-lora/`
+  - Final model saved to: `llama-vlam-final/`
 
 ### Inference & Demo
-- **`VLA.py`** ⭐ **[MAIN FILE]** - Complete VLAM pipeline (detection → LLM → visualization)
+- **`VLA.py`** **[MAIN FILE]** - Complete VLAM pipeline (detection -> LLM -> visualization)
   - Loads YOLO + fine-tuned LLaMA
   - Processes test images with user commands
   - Saves annotated images + JSON outputs to `outputs/`
@@ -72,7 +67,7 @@ python test_unsloth.py
 
 ### 3. Run Full Pipeline (Already Trained)
 
-If you already have the fine-tuned model at `C:/vlam/llama-vlam-final/`:
+If you already have the fine-tuned model at `llama-vlam-final/`:
 ```bash
 python VLA.py
 ```
@@ -92,12 +87,12 @@ This will:
 ```python
 # Line ~186
 vlam = VLAMPipeline(
-    llm_path="C:/vlam/models/llama-vlam-final",  # Your model path
+    llm_path="llama-vlam-final/",  # Your model path
     yolo_model="yolov8x-worldv2.pt"              # Auto-downloads first run
 )
 
 # Line ~191
-test_dir = Path("C:/vlam/frames_with_piles")  # Your test images folder
+test_dir = Path("/pile_detection/frames_with_piles")  # Your test images folder
 ```
 
 ### Customize Commands
