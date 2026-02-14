@@ -1,0 +1,24 @@
+{
+  "image": "C:\\Github_workspace\\vlam_sensmore\\pile_detection_verification\\simple_nouns\\with_piles\\hWp9vZ7eeaM.f398_1028.jpg",
+  "command": "Where should I go next?",
+  "detections": [
+    {
+      "class": "mound",
+      "confidence": 0.06844361126422882,
+      "position": {
+        "cx": 0.807,
+        "cy": 0.342,
+        "area": 0.0225,
+        "direction": "far-right",
+        "bbox": [
+          460,
+          99,
+          571,
+          146
+        ]
+      }
+    }
+  ],
+  "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.07) at far-right (0.807, 0.342) size=0.022",
+  "response": "Mound detected at far-right (0.807, 0.342). Move forward and steer slightly to the right for approximately 30 meters."
+}

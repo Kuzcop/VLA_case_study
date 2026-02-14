@@ -1,0 +1,40 @@
+{
+  "image": "C:\\Github_workspace\\vlam_sensmore\\pile_detection_verification\\simple_nouns\\with_piles\\wc72kf9DWaY.f136_1108.jpg",
+  "command": "Where should I go next?",
+  "detections": [
+    {
+      "class": "soil",
+      "confidence": 0.24224475026130676,
+      "position": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "area": 0.9994,
+        "direction": "mid-center",
+        "bbox": [
+          0,
+          0,
+          640,
+          360
+        ]
+      }
+    },
+    {
+      "class": "pile",
+      "confidence": 0.22215352952480316,
+      "position": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "area": 1.0,
+        "direction": "mid-center",
+        "bbox": [
+          0,
+          0,
+          639,
+          360
+        ]
+      }
+    }
+  ],
+  "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. soil (conf=0.24) at mid-center (0.5, 0.5) size=0.999\n  2. pile (conf=0.22) at mid-center (0.5, 0.5) size=1.000",
+  "response": "Move forward approximately 10 meters, slight left adjustment needed to reach the pile."
+}

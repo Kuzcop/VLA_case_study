@@ -1,0 +1,12 @@
+
+# Models (too large for GitHub)
+*.safetensors
+*.pt
+*.bin
+*.gguf
+
+/videos
+
+unsloth_compiled_cache
+# Data (too large)
+frames/

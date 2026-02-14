@@ -1,0 +1,84 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            5r0ensxqb878ns8c1f6cpylukyevxpor:
+                codePath: llm_finetune.py
+                codePathLocal: llm_finetune.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "13.1"
+                disk:
+                    /:
+                        total: "891900915712"
+                        used: "533101817856"
+                email: aman.sidhu@mail.mcgill.ca
+                executable: C:\conda\envs\vlam\python.exe
+                gpu: NVIDIA GeForce RTX 2070
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 2304
+                      memoryTotal: "8589934592"
+                      name: NVIDIA GeForce RTX 2070
+                      uuid: GPU-f9db8ce7-33ef-c19f-e80c-358dee228915
+                host: DESKTOP-KJMM416
+                memory:
+                    total: "33441243136"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Github_workspace\vlam_sensmore\llm_finetune.py
+                python: CPython 3.11.14
+                root: C:\Github_workspace\vlam_sensmore
+                startedAt: "2026-02-14T00:49:29.290578Z"
+                writerId: 5r0ensxqb878ns8c1f6cpylukyevxpor
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 51
+                - 71
+                - 84
+                - 95
+                - 98
+                - 105
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 51
+                - 71
+                - 84
+                - 95
+                - 98
+                - 105
+            "3":
+                - 13
+                - 16
+            "4": 3.11.14
+            "5": 0.25.0
+            "6": 4.57.6
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+batch_size:
+    value: 2
+dataset_size:
+    value: 1252
+grad_accum:
+    value: 4
+learning_rate:
+    value: 0.0002
+lora_alpha:
+    value: 16
+lora_r:
+    value: 16
+max_steps:
+    value: 469
+model:
+    value: LLaMA-3.2-1B

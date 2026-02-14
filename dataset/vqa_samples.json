@@ -1,0 +1,62 @@
+[
+  {
+    "image": "hWp9vZ7eeaM.f398_3493.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.27) at far-left (0.331, 0.263) size=0.006\n  2. mound (conf=0.05) at far-left (0.218, 0.284) size=0.009",
+    "question": "Direct me to the closest mound.",
+    "answer": "Closest mound is at far-left (0.218, 0.284). Turn left and move approximately 15 meters."
+  },
+  {
+    "image": "hWp9vZ7eeaM.f398_0736.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.12) at far-right (0.912, 0.309) size=0.011",
+    "question": "Is there anything to load ahead?",
+    "answer": "No significant piles detected directly ahead. Mound is at far-right."
+  },
+  {
+    "image": "hWp9vZ7eeaM.f398_1548.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.06) at near-right (0.803, 0.923) size=0.017",
+    "question": "Direct me to the closest pile.",
+    "answer": "A mound is at near-right (0.803, 0.923). Turn right slightly and proceed forward about 10 meters."
+  },
+  {
+    "image": "hWp9vZ7eeaM.f398_3486.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.05) at far-center (0.4, 0.245) size=0.003",
+    "question": "Where should I go next?",
+    "answer": "A small mound is detected at far-center (0.4, 0.245). Move forward approximately 50 meters to reach it."
+  },
+  {
+    "image": "6Ce7CiQ9yk8.f298_0110.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.11) at mid-center (0.485, 0.489) size=0.080",
+    "question": "Where is the material pile?",
+    "answer": "A small mound is detected at mid-center (0.485, 0.489). Move straight ahead to reach it."
+  },
+  {
+    "image": "hWp9vZ7eeaM.f398_3541.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.08) at far-right (0.863, 0.299) size=0.006",
+    "question": "Direct me to the closest pile.",
+    "answer": "Mound detected at far-right (0.863, 0.299). Move forward and turn slightly right to reach it."
+  },
+  {
+    "image": "hWp9vZ7eeaM.f398_3745.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.11) at far-left (0.287, 0.253) size=0.002",
+    "question": "Direct me to the closest pile.",
+    "answer": "Small mound detected at far-left (0.287, 0.253). Proceed forward and turn slightly left after 30 meters to reach the pile."
+  },
+  {
+    "image": "hWp9vZ7eeaM.f398_0887.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.09) at far-right (0.74, 0.341) size=0.002",
+    "question": "Is there anything to load ahead?",
+    "answer": "No significant materials are detected directly ahead. A small mound is at far-right (0.74, 0.341)."
+  },
+  {
+    "image": "PnFhMHbcL44.f136_0611.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.10) at far-center (0.424, 0.241) size=0.052",
+    "question": "Where is the material pile?",
+    "answer": "There is a mound at far-center (0.424, 0.241). Move forward about 30 meters to approach it."
+  },
+  {
+    "image": "6Ce7CiQ9yk8.f298_0423.jpg",
+    "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.07) at mid-right (0.793, 0.466) size=0.193",
+    "question": "Where should I go next?",
+    "answer": "Pile detected at mid-right (0.793, 0.466). Move forward and steer slightly to the right to approach the mound."
+  }
+]

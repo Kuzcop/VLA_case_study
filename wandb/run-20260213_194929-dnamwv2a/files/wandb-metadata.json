@@ -1,0 +1,36 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.14",
+  "startedAt":  "2026-02-14T00:49:29.290578Z",
+  "program":  "C:\\Github_workspace\\vlam_sensmore\\llm_finetune.py",
+  "codePath":  "llm_finetune.py",
+  "codePathLocal":  "llm_finetune.py",
+  "email":  "aman.sidhu@mail.mcgill.ca",
+  "root":  "C:\\Github_workspace\\vlam_sensmore",
+  "host":  "DESKTOP-KJMM416",
+  "executable":  "C:\\conda\\envs\\vlam\\python.exe",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce RTX 2070",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "891900915712",
+      "used":  "533101817856"
+    }
+  },
+  "memory":  {
+    "total":  "33441243136"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 2070",
+      "memoryTotal":  "8589934592",
+      "cudaCores":  2304,
+      "architecture":  "Turing",
+      "uuid":  "GPU-f9db8ce7-33ef-c19f-e80c-358dee228915"
+    }
+  ],
+  "cudaVersion":  "13.1",
+  "writerId":  "5r0ensxqb878ns8c1f6cpylukyevxpor"
+}

@@ -1,0 +1,24 @@
+{
+  "image": "C:\\Github_workspace\\vlam_sensmore\\pile_detection_verification\\simple_nouns\\with_piles\\hWp9vZ7eeaM.f398_1650.jpg",
+  "command": "Go to the nearest pile and fill the bucket!",
+  "detections": [
+    {
+      "class": "mound",
+      "confidence": 0.07417882978916168,
+      "position": {
+        "cx": 0.196,
+        "cy": 0.326,
+        "area": 0.0236,
+        "direction": "far-left",
+        "bbox": [
+          63,
+          95,
+          188,
+          139
+        ]
+      }
+    }
+  ],
+  "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.07) at far-left (0.196, 0.326) size=0.024",
+  "response": "Move towards the pile detected at far-left (0.196, 0.326) by steering slightly left and moving forward 15 meters."
+}

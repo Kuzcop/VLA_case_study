@@ -1,0 +1,24 @@
+{
+  "image": "C:\\Github_workspace\\vlam_sensmore\\pile_detection_verification\\simple_nouns\\with_piles\\hWp9vZ7eeaM.f398_0419.jpg",
+  "command": "What do you see ahead?",
+  "detections": [
+    {
+      "class": "mound",
+      "confidence": 0.08295699208974838,
+      "position": {
+        "cx": 0.217,
+        "cy": 0.319,
+        "area": 0.0231,
+        "direction": "far-left",
+        "bbox": [
+          77,
+          93,
+          199,
+          136
+        ]
+      }
+    }
+  ],
+  "grounding_context": "[SCENE] Construction site view from wheel loader.\n[DETECTIONS]\n  1. mound (conf=0.08) at far-left (0.217, 0.319) size=0.023",
+  "response": "A mound is detected at far-left (0.217, 0.319). Move left and proceed approximately 30 meters to reach it."
+}
