@@ -105,7 +105,11 @@ commands = [
     "What do you see ahead?"
 ]
 ```
+---
 
+## Training Results
+
+[WandB Report](https://wandb.ai/aman-sidhu-mcgill-university/vlam-wheel-loader/reports/Sensmore-VLA-Case-Study--VmlldzoxNTkzNzMyNA?accessToken=825ki9nqt7gg5po7twdbsxnriog89te14qksz6viq7uo09j5lkoyavr6ctz4vyhj) 
 ---
 
 ## Output Format
